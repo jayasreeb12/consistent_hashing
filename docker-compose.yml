@@ -1,0 +1,24 @@
+services:
+  mongo-1:
+    image: mongo:latest
+    container_name: mongo-1
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=student_db
+
+  mongo-2:
+    image: mongo:latest
+    container_name: mongo-2
+    ports:
+      - "27018:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=student_db
+
+  mongo-3:
+    image: mongo:latest
+    container_name: mongo-3
+    ports:
+      - "27019:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=student_db
